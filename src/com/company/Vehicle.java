@@ -10,21 +10,23 @@ package com.company;
 
 abstract public class Vehicle {
 
-    int spd;//скорость
+    int speed;//скорость
     int rts;//расстояние до вынужденной остановки
     int priceperkm;//цена за км
+    double capacity;
+    int passengerseats;
     double rest;
     double restday;
 
-    public Vehicle(int spd, int rts, int priceperkm) {
-        this.spd = spd;
+    public Vehicle(int speed, int rts, int priceperkm) {
+        this.speed = speed;
         this.rts = rts;
         this.priceperkm = priceperkm;
 
     }
 
     public void GetInfo(){
-        System.out.println("Скорость: " + spd);
+        System.out.println("Скорость: " + speed);
         System.out.println("Среднее расстояние до остановки: " + rts);
         System.out.println("Цена за КМ пути: "+ priceperkm);
     }

@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int vriant;
         int scrange;
@@ -21,8 +22,10 @@ public class Main {
 
         System.out.println("Что вы хотите? \n 1 - Прокатиться на такси. \n 2 - Арендовать велосипед. \n 3 - Перевезти груз.");
         vriant = sc.nextInt();
+
         System.out.println("Какое расстояние, примерно, вам необходимо преодолеть?");
         scrange = sc.nextInt();
+
         switch (vriant)
         {
             case 1 :
@@ -34,7 +37,10 @@ public class Main {
             case 3 :
                 Solve sl3 = new Solve(scrange,TC[2]);
                 break;
+            default:
+                System.out.println("Вы сами не знаете чего хотите!");
         }
-    sc.close();
+
+        sc.close();
     }
 }

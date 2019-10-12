@@ -7,7 +7,7 @@ public class Solve {
 
     public Solve(int range,Vehicle tc){
 
-    slvtime = range/tc.spd;
+    slvtime = range/tc.speed;
     slvtime = slvtime + range/tc.rts*tc.rest;
 
     if(slvtime>20){
