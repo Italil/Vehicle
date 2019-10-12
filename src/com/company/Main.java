@@ -16,9 +16,9 @@ public class Main {
         int scrange;
 
         Vehicle[] TC = new Vehicle[3];
-        TC[0] = new Car(70,450,20);
-        TC[1] = new Bicycle(14,20,10);
-        TC[2] = new Wagon(30,80,30);
+        TC[0] = new Car("Такси 1",70,450,20);
+        TC[1] = new Bicycle("Велосипед 1",14,20,10);
+        TC[2] = new Wagon("Грузовик 1",30,150,30);
 
         System.out.println("Что вы хотите? \n 1 - Прокатиться на такси. \n 2 - Арендовать велосипед. \n 3 - Перевезти груз.");
         vriant = sc.nextInt();
@@ -30,6 +30,7 @@ public class Main {
         {
             case 1 :
                 Solve sl = new Solve(scrange,TC[0]);
+                TC[0].GetInfo();
                 break;
             case 2 :
                 Solve sl2 = new Solve(scrange,TC[1]);

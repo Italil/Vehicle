@@ -13,20 +13,22 @@ abstract public class Vehicle {
     int speed;//скорость
     int rts;//расстояние до вынужденной остановки
     int priceperkm;//цена за км
+    String name;
     double capacity;
     int passengerseats;
     double rest;
     double restday;
 
-    public Vehicle(int speed, int rts, int priceperkm) {
+    public Vehicle(String name,int speed, int rts, int priceperkm) {
+        this.name = name;
         this.speed = speed;
         this.rts = rts;
         this.priceperkm = priceperkm;
-
     }
 
     public void GetInfo(){
-        System.out.println("Скорость: " + speed);
+        System.out.println("Наименование: " + name);
+        System.out.println("Ср. скорость: " + speed);
         System.out.println("Среднее расстояние до остановки: " + rts);
         System.out.println("Цена за КМ пути: "+ priceperkm);
     }

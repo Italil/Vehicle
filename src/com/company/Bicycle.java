@@ -2,10 +2,12 @@ package com.company;
 
 public class Bicycle extends Vehicle {
 
-    public Bicycle(int speed, int rts, int priceperkm) {
-        super(speed, rts, priceperkm);
-        double rest = 0.3;
-        double restday = 8;
+    public Bicycle(String name,int speed, int rts, int priceperkm) {
+        super(name,speed, rts, priceperkm);
+        rest = 0.3;
+        restday = 8;
+        capacity = 0;
+        passengerseats = 1;
     }
 
 }
