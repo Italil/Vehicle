@@ -2,7 +2,7 @@ package com.company;
 
 public class Solve {
 
-    int slvprice;
+    double slvprice;
     double slvtime;
 
     public Solve(int range,Vehicle tc){
@@ -13,10 +13,10 @@ public class Solve {
     if(slvtime>20){
         slvtime+=tc.restday;
     }
-
     slvprice = range*tc.priceperkm;
-
-    System.out.println("Время поездки: " + slvtime);
+    slvtime*=60;
+    slvtime = Math.round(slvtime*100)/100;
+    System.out.println("Примерное время поездки: " + slvtime + " мин.");
     System.out.println("Стоимость перевозки: " + slvprice);
     }
 }

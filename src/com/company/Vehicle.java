@@ -10,16 +10,16 @@ package com.company;
 
 abstract public class Vehicle {
 
-    int speed;//скорость
-    int rts;//расстояние до вынужденной остановки
-    int priceperkm;//цена за км
+    double speed;//скорость
+    double rts;//расстояние до вынужденной остановки
+    double priceperkm;//цена за км
     String name;
     double capacity;
-    int passengerseats;
+    double passengerseats;
     double rest;
     double restday;
 
-    public Vehicle(String name,int speed, int rts, int priceperkm) {
+    public Vehicle(String name,double speed, double rts, double priceperkm) {
         this.name = name;
         this.speed = speed;
         this.rts = rts;
